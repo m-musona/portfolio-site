@@ -23,22 +23,22 @@ const projects = [
 
 const items = [
   {
-    image: "https://i.pravatar.cc/300?img=1",
+    image: "projects/InvoiceGenerator.jpg",
     title: "Invoice Generator",
     subtitle: "Asp.Net",
     handle: "C#",
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(145deg, #6f1dd3, #000)",
-    url: "https://github.com/sarahjohnson"
+    url: "https://www.codester.com/items/56459/asp-net-invoice-generator"
   },
   {
-    image: "https://i.pravatar.cc/300?img=2",
+    image: "projects/ResumeRanker.jpg",
     title: "AI Resume Ranker",
     subtitle: "Django",
     handle: "Python",
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(180deg, #6f1dd3, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    url: "https://www.codester.com/items/56460/ai-resume-ranker-in-django"
   },
   {
     image: "https://i.pravatar.cc/300?img=2",
@@ -66,6 +66,15 @@ const items = [
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(180deg, #6f1dd3, #000)",
     url: "https://linkedin.com/in/mikechen"
+  },
+  {
+    image: "projects/Sentify.jpg",
+    title: "Sentiment Analysis Analyser",
+    subtitle: "NextJS, Python, NLP",
+    handle: "Python",
+    borderColor: "#9d0bf1",
+    gradient: "linear-gradient(180deg, #6f1dd3, #000)",
+    url: "https://www.codester.com/items/55009/sentify-social-media-posts-sentiment-analyser"
   },
   {
     image: "https://i.pravatar.cc/300?img=2",
@@ -190,7 +199,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      <section className="relative px-6 md:px-16 py-20 h-[400px] bg-[#141414] overflow-hidden">
+      <section className="relative px-6 md:px-16 py-20 h-[600px] bg-[#141414] overflow-hidden">
         <div className="relative h-[400px] flex flex-col gap-6">
           <h1 className="text-3xl font-bold text-[#9d0bf1]">
             My Education & Certifications
