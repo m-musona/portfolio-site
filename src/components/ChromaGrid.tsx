@@ -183,7 +183,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
             }}
           />
           {c.image ? (
-  <div className="relative z-10 p-[10px] box-border">
+  <div className="relative z-10 p-2.5 box-border">
     <div className="aspect-video w-full overflow-hidden rounded-[10px]">
       <img
         src={c.image}
@@ -216,7 +216,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       />
       <div
         ref={fadeRef}
-        className="absolute inset-0 pointer-events-none transition-opacity duration-[250ms] z-40"
+        className="absolute inset-0 pointer-events-none transition-opacity duration-250 z-40"
         style={{
           backdropFilter: 'grayscale(1) brightness(0.78)',
           WebkitBackdropFilter: 'grayscale(1) brightness(0.78)',

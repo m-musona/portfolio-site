@@ -7,19 +7,12 @@ import CardSwap, { Card } from "@/components/CardSwap";
 import MagicBento from "@/components/MagicBento";
 import ChromaGrid from "@/components/ChromaGrid";
 
-const skillsRow1 = ["Django", "Python", "C#", "Java", "React", "TypeScript", "PostgreSQL", 
-  "Django", "Python", "C#", "Java"];
-const skillsRow2 = ["AWS", "Docker", "Git", "Linux", "REST APIs", "TailwindCSS", 
-  "AWS", "Docker", "Git", "Linux", "REST APIs"];
+const skillsRow1 = ["Django", "Python", "C#", "Java", "React", "TypeScript", "SQL", 
+  "NextJS", "Vite", "PHP", "Laravel"];
+const skillsRow2 = ["AWS", "Docker", "Git", "C++", "REST APIs", "TailwindCSS", 
+  "OpenGL", "OpenCV", "C", "Flutter", "Dart"];
 const skillsRow3 = ["NumPy", "Pandas", "Kaggle", "Machine Learning", "CI/CD", 
-  "Machine Learning", "NumPy", "Pandas", "Kaggle"];
-
-const projects = [
-  { title: "Project One", link: "#" },
-  { title: "Project Two", link: "#" },
-  { title: "Project Three", link: "#" },
-  { title: "Project Four", link: "#" },
-];
+  "Natural Language Processing", "Tendorflow", "Scikit-Learn", "Pytorch"];
 
 const items = [
   {
@@ -41,31 +34,31 @@ const items = [
     url: "https://www.codester.com/items/56460/ai-resume-ranker-in-django"
   },
   {
-    image: "https://i.pravatar.cc/300?img=2",
+    image: "projects/ImageClassificationAPI.png",
     title: "Image Classification API",
     subtitle: "FastApi, Resnet(Machine Learning)",
     handle: "Python",
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(180deg, #6f1dd3, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    url: "https://github.com/m-musona/image-classification-api"
   },
   {
-    image: "https://i.pravatar.cc/300?img=2",
+    image: "projects/PropertyTaxSystem.png",
     title: "Property Tax System",
     subtitle: "FastApi, Django, Next js, Google Gemini, Scikit Learn",
     handle: "Python, NextJS",
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(180deg, #6f1dd3, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    url: "https://github.com/studio-digicode/property-tax-system-frontend"
   },
   {
-    image: "https://i.pravatar.cc/300?img=2",
+    image: "projects/CustomerGazeTracker.PNG",
     title: "Customer Gaze Tracking System",
     subtitle: "Dlib, OpenCV",
     handle: "Python",
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(180deg, #6f1dd3, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    url: "https://github.com/m-musona/customer-gaze-tracking"
   },
   {
     image: "projects/Sentify.jpg",
@@ -77,13 +70,13 @@ const items = [
     url: "https://www.codester.com/items/55009/sentify-social-media-posts-sentiment-analyser"
   },
   {
-    image: "https://i.pravatar.cc/300?img=2",
+    image: "projects/BasicPortfolioSite.PNG",
     title: "Basic Portfolio Site",
     subtitle: "Html, Css, JS",
     handle: "JS",
     borderColor: "#9d0bf1",
     gradient: "linear-gradient(180deg, #6f1dd3, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    url: "https://github.com/m-musona/portfolio-site"
   },
 ];
 
@@ -169,7 +162,7 @@ const Portfolio: React.FC = () => {
                 University of Lusaka (Started July 2023)
               </p>
               <p className="text-lg">
-                <span className="font-semibold">Certifications:</span> Kaggle, AWS, Google
+                <span className="font-semibold">Certifications:</span> Kaggle
               </p>
             </div>
 
@@ -182,14 +175,14 @@ const Portfolio: React.FC = () => {
               </p>
               <div className="flex gap-6">
                 <a
-                  href="#"
-                  className="text-[#6f1dd3] hover:text-[#9d0bf1] transition"
+                  href="https://zm.linkedin.com/in/mutale-musona-3567a62a9"
+                  className="text-[#6f1dd3] hover:text-[#9d0bf1] underline transition"
                 >
                   LinkedIn
                 </a>
                 <a
-                  href="#"
-                  className="text-[#6f1dd3] hover:text-[#9d0bf1] transition"
+                  href="https://github.com/m-musona/"
+                  className="text-[#6f1dd3] hover:text-[#9d0bf1] underline transition"
                 >
                   GitHub
                 </a>
@@ -199,7 +192,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      <section className="relative px-6 md:px-16 py-20 h-[600px] bg-[#141414] overflow-hidden">
+      <section className="relative px-6 md:px-16 py-20 h-[520px] bg-[#141414] overflow-hidden">
         <div className="relative h-[400px] flex flex-col gap-6">
           <h1 className="text-3xl font-bold text-[#9d0bf1]">
             My Education & Certifications
@@ -213,7 +206,7 @@ const Portfolio: React.FC = () => {
             skewAmount={0}
           >
             {/* Education Card */}
-            <Card className="bg-gradient-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
+            <Card className="bg-linear-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
               <h3 className="text-2xl font-bold mb-3 text-[#9d0bf1]">
                 🎓 Education
               </h3>
@@ -223,7 +216,7 @@ const Portfolio: React.FC = () => {
               </p>
 
               <p className="text-sm text-gray-400 mt-1">
-                Bachelor’s Degree in Computer Science
+                Bachelor's Degree in Information Systems And Technology
               </p>
 
               <div className="mt-3 space-y-1 text-sm text-gray-400">
@@ -234,9 +227,9 @@ const Portfolio: React.FC = () => {
             </Card>
 
             {/* Kaggle Certification */}
-            <Card className="bg-gradient-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
+            <Card className="bg-linear-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
               <h3 className="text-2xl font-bold mb-3 text-[#9d0bf1]">
-                📊 Kaggle Certification
+                📊 Kaggle Certifications
               </h3>
 
               <p className="text-sm text-gray-300 font-medium">
@@ -244,23 +237,24 @@ const Portfolio: React.FC = () => {
               </p>
 
               <ul className="mt-3 text-sm text-gray-400 space-y-1">
-                <li>• Python, Pandas, NumPy</li>
-                <li>• Machine Learning Models</li>
-                <li>• Real-world datasets & competitions</li>
+                <li>• Intro To Machine Learning</li>
+                <li>• Intermediate Machine Learning</li>
+                <li>• Introduction To Deep Learning</li>
+                <li>• Data Cleaning</li>
               </ul>
 
               <a
-                href="https://www.kaggle.com/your-profile"
+                href="https://www.kaggle.com/mutalemusona"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 text-sm font-medium text-[#9d0bf1] hover:underline"
               >
-                View Certificate →
+                View Certificates →
               </a>
             </Card>
 
             {/* AWS Certification */}
-            <Card className="bg-gradient-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
+            {/* <Card className="bg-linear-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
               <h3 className="text-2xl font-bold mb-3 text-[#9d0bf1]">
                 ☁️ AWS Certification
               </h3>
@@ -283,10 +277,10 @@ const Portfolio: React.FC = () => {
               >
                 View Certificate →
               </a>
-            </Card>
+            </Card> */}
 
             {/* Google Certification */}
-            <Card className="bg-gradient-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
+            {/* <Card className="bg-linear-to-br from-[#111111] to-[#1b1b1b] text-white p-7 rounded-2xl border border-[#6f1dd3]/60 shadow-lg hover:shadow-purple-500/20 transition-all">
               <h3 className="text-2xl font-bold mb-3 text-[#9d0bf1]">
                 🧠 Google Certification
               </h3>
@@ -309,7 +303,7 @@ const Portfolio: React.FC = () => {
               >
                 View Certificate →
               </a>
-            </Card>
+            </Card> */}
           </CardSwap>
         </div>
       </section>
